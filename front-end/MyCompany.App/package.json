@@ -1,0 +1,33 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "scripts": {
+    "app1:start": "ng serve --port 4201 -c app1-dev",
+    "app2:start": "ng serve --port 4202 -c app2-dev",
+    "app1:build": "ng build -c prod,app1-prod",
+    "app2:build": "ng build -c prod,app2-prod"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~12.2.0",
+    "@angular/common": "~12.2.0",
+    "@angular/compiler": "~12.2.0",
+    "@angular/core": "~12.2.0",
+    "@angular/forms": "~12.2.0",
+    "@angular/platform-browser": "~12.2.0",
+    "@angular/platform-browser-dynamic": "~12.2.0",
+    "@angular/router": "~12.2.0",
+    "angular-oauth2-oidc": "^12.1.0",
+    "bootstrap": "^5.1.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.7",
+    "@angular/cli": "~12.2.7",
+    "@angular/compiler-cli": "~12.2.0",
+    "@types/node": "^12.11.1",
+    "typescript": "~4.3.5"
+  }
+}

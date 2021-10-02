@@ -1,0 +1,39 @@
+<h1>API call</h1>
+
+<p>You can perform example API calls from here.</p>
+
+<hr>
+
+<div class="d-flex justify-content-between align-items-center">
+  <h2>Call Api1</h2>
+  <button class="btn btn-primary" (click)="runRequest1()">Run request</button>
+</div>
+<p *ngIf="appName === appNameEnum.APP1">
+  This app <b>can</b> call <i>Api1</i> and receive a success response since it requested the <code>api1</code> scope during
+  authentication.
+</p>
+<p *ngIf="appName === appNameEnum.APP2">
+  This app <b>can't</b> call <i>Api1</i> and receive a success response since it didn't requested the <code>api1</code> scope during
+  authentication.
+</p>
+
+<label><b>Response:</b></label>
+<pre>{{response1}}</pre>
+
+<hr>
+
+<div class="d-flex justify-content-between align-items-center">
+  <h2>Call Api2</h2>
+  <button class="btn btn-primary" (click)="runRequest2()">Run request</button>
+</div>
+<p *ngIf="appName === appNameEnum.APP1">
+  This app <b>can't</b> call <i>Api2</i> and receive a success response since it didn't requested the <code>api2</code> scope during
+  authentication.
+</p>
+<p *ngIf="appName === appNameEnum.APP2">
+  This app <b>can</b> call <i>Api2</i> and receive a success response since it requested the <code>api2</code> scope during
+  authentication.
+</p>
+
+<label><b>Response:</b></label>
+<pre>{{response2}}</pre>
